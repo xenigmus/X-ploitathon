@@ -1,5 +1,4 @@
-Flag : 🐱 🐍 🦋 🕗 { 🐘 🦒 @ 🦊 🦄 _ 🐢 🕒 _ 🦋 🦉 @ 🦄 }
-
+Flag : 🐱🐍👍🕗{🐐🦒🦘🐘🦑🦘🦜🦜👍🦊🦘🐻🦑🦘🐘!🐍🕛🦜$}
 
 A = 🦁
 B = 🐻
@@ -25,7 +24,7 @@ U = 🦒
 V = 🦚
 W = 🐺
 X = 🕷
-Y = 🕗
+Y = 👍
 Z = 🦧
 
 Numbers and Special Characters:
@@ -42,3 +41,7 @@ Numbers and Special Characters:
 _ = 🦖
 @ = 🦕
 
+Riddle for Participants:
+"Cyber Samurai, your prize is locked within a puzzle of beasts. Seek the feline, serpent, and winged creatures to uncover the code of a lost world. A key once shifted, will guide you through the labyrinth of symbols. Beware the mirrored cipher that hides your fortune. What was twisted must be set straight, and then... the treasure will be yours!"
+
+This riddle hints at the ROT13 cipher (with "mirrored cipher") and challenges the participants to match the emojis to the ROT13 encrypted characters. Once they solve the crossword, they'll have the ROT13 flag, and they will need to decrypt it to get the original flag.
