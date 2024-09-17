@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /secret/s3cr3t.html
+
+User-agent: Googlebot
+Allow: /public/
+Disallow: /test/
+
+User-agent: Bingbot
+Disallow: /
+
+Sitemap: /sitemap.xml
+
