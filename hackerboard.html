@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>X'ploitathon CTF</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .team-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    z-index: 10;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+        .team-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .team-points {
+            font-size: 1.5rem;
+            color: #ff0000;
+            font-weight: 700;
+            text-align: right;
+        }
+        .team-details {
+            padding-top: 10px;
+        }
+        .card-body {
+    background-color: transparent; /* Ensure no overlapping background */
+}
+.team-details {
+    margin-top: 10px;
+}
+
+.file-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #11cf30;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .file-link:hover {
+            background-color: #223617;
+        }
+
+.jumbotron {
+    z-index: 1;
+    position: relative;
+}
+
+.glitch__img {
+    z-index: -1; /* Push the background behind the content */
+}
+
+.card-header {
+    cursor: pointer; /* Make the card header clickable */
+    background-color: rgba(255, 255, 255, 0.1); /* Add some styling to the header */
+    padding: 15px;
+}
+
+.card-header:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Transition effect for the collapse */
+.collapse {
+    transition: height 0.3s ease-out; /* Smooth slide-down effect */
+}
+
+.card-body {
+    background-color: transparent; /* Different background for the details */
+    padding: 15px;
+}
+.download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #900e0e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+
+<body class="imgloaded">
+    <div class="glitch">
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+    </div>
+    <div class="navbar-dark text-white">
+        <div class="container">
+            <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="pl-md-0 p-3 text-decoration-none text-light">
+                            <h3 class="bold"><span class="color_danger">X'ploitathon </span><span class="color_white">CTF</span></h3>
+                        </a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="p-3 text-decoration-none text-light bold">Home</a>
+                        <a href="about.html" class="p-3 text-decoration-none text-light bold">About</a>
+                        <a href="hackerboard.html" class="p-3 text-decoration-none text-white bold">Hackerboard</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="display-1 bold color_white content__title text-center">
+                        <span class="color_danger">CHALLE</span>NGES<span class="vim-caret">&nbsp;</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="container mt-5">
+                <!-- Team 1 Card -->
+                <div class="jumbotron bg-transparent mb-0 pt-3 radius-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                
+                            </div>
+                        </div>
+                        <!-- Team Card 1 -->
+                        <div class="team-card card mb-3">
+                            <div class="card-header" data-toggle="collapse" data-target="#team1Details" aria-expanded="false" aria-controls="team1Details">
+                                <div class="d-flex justify-content-between">
+                                    <div class="team-name">1.Welcome</div>
+                                    <div class="team-points">100</div>
+                                </div>
+                            </div>
+                
+                            <!-- Hidden Team Details -->
+                            <div id="team1Details" class="collapse">
+                                <div class="card-body">
+                                    <p><strong><a href="index.html">Desc</a>: Work with index to find the flag.</strong></p>
+
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Team Card 2 -->
+                        <div class="team-card card mb-3">
+                            <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
+                                <div class="d-flex justify-content-between">
+                                    <div class="team-name">2.The Hidden Ninja</div>
+                                    <div class="team-points">200</div>
+                                </div>
+                            </div>
+                            <!-- Hidden Team Details -->
+                            <div id="team2Details" class="collapse">
+                                <div class="card-body">
+                                    <p><strong>Riddle:</strong>
+                                        In the quiet dark, where shadows play, 
+                                        The ninjas leave their mark, but not in the day. 
+                                        Search through the layers, pixel by pixel, Find where they hide, it won't be simple. 
+                                        A cipher may help, a tool or two, Crack the code, the flag's waiting for you.
+                                    </p>
+                                    <button class="download-button" onclick="downloadImage('repo/ninja/shadows.jpg', 'shadows.jpg')">Download</button>
+                                    <script>
+                                        function downloadImage(url, filename) {
+                                            const a = document.createElement('a');
+                                            a.href = url;
+                                            a.download = filename;
+                                            document.body.appendChild(a);
+                                            a.click();
+                                            document.body.removeChild(a);
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Team Card 3 -->
+                        <div class="team-card card mb-3">
+                            <div class="card-header" data-toggle="collapse" data-target="#team3Details" aria-expanded="false" aria-controls="team3Details">
+                                <div class="d-flex justify-content-between">
+                                    <div class="team-name">3.The Silent Warrior</div>
+                                    <div class="team-points">500</div>
+                                </div>
+                            </div>
+                
+                            <!-- Hidden Team Details -->
+                            <div id="team3Details" class="collapse">
+                                <div class="card-body">
+                                    <p><strong>Riddle: </strong>In a world where guns are none,
+                                        Samurai conquer, their task begun.
+                                        With sharpened swords, their foes they beat,
+                                        Can you decode this binary feat?</p>
+                                    <p><a class="file-link" href="repo/samurai/CyberpunkShop.exe" target="_blank">Open File</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Team Card 4 -->
+                        <div class="team-card card mb-3">
+                            <div class="card-header" data-toggle="collapse" data-target="#team4Details" aria-expanded="false" aria-controls="team4Details">
+                                <div class="d-flex justify-content-between">
+                                    <div class="team-name">4.The Monarch</div>
+                                    <div class="team-points">500</div>
+                                </div>
+                            </div>
+                
+                            <!-- Hidden Team Details -->
+                            <div id="team4Details" class="collapse">
+                                <div class="card-body">
+                                    <p><strong>Riddle: </strong>
+                                    The Monarch is the true ruler of his empire,
+                                    He sees no one and no one sees him.
+                                    His is present at all times but is not there at the same.
+                                    He is easy to find but not possible to meet.
+                                    </p>
+                                    <p><strong>Desc: </strong> 
+                                    Find Monarch's IRL 'About' to capture this flag.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
