@@ -108,11 +108,11 @@
 
 <body class="imgloaded">
     <div class="glitch">
-        <div class="glitch__img glitch__img_leaderboard"></div>
-        <div class="glitch__img glitch__img_leaderboard"></div>
-        <div class="glitch__img glitch__img_leaderboard"></div>
-        <div class="glitch__img glitch__img_leaderboard"></div>
-        <div class="glitch__img glitch__img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
+        <div class="glitch_img glitch_img_leaderboard"></div>
     </div>
     <div class="navbar-dark text-white">
         <div class="container">
@@ -158,15 +158,15 @@
                         </div>
                         <!-- Team Card 1 -->
                         <div class="team-card card mb-3">
-                            <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
+                            <div class="card-header" data-toggle="collapse" data-target="#team1Details" aria-expanded="false" aria-controls="team1Details">
                                 <div class="d-flex justify-content-between">
                                     <div class="team-name">1.Welcome</div>
-                                    <div class="team-points">50</div>
+                                    <div class="team-points">100</div>
                                 </div>
                             </div>
                 
                             <!-- Hidden Team Details -->
-                            <div id="team2Details" class="collapse">
+                            <div id="team1Details" class="collapse">
                                 <div class="card-body">
                                     <p><strong><a href="index.html">Desc</a>: Work with index to find the flag.</strong></p>
 
@@ -178,314 +178,82 @@
                         <div class="team-card card mb-3">
                             <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
                                 <div class="d-flex justify-content-between">
-                                    <div class="team-name">2.Neon challenge</div>
-                                    <div class="team-points">100</div>
+                                    <div class="team-name">2.The Hidden Ninja</div>
+                                    <div class="team-points">200</div>
                                 </div>
                             </div>
-                
                             <!-- Hidden Team Details -->
                             <div id="team2Details" class="collapse">
                                 <div class="card-body">
-                                    <p><strong>Riddle:I hide in plain sight, guiding bots on their way,  
-                                        Telling them what to seek or where not to stray.  
-                                        Look in the root, at my text you'll glance,  
-                                        Which file am I, that controls web crawlers' dance?</strong></p>
-
+                                    <p><strong>Riddle:</strong>
+                                        In the quiet dark, where shadows play, 
+                                        The ninjas leave their mark, but not in the day. 
+                                        Search through the layers, pixel by pixel, Find where they hide, it won't be simple. 
+                                        A cipher may help, a tool or two, Crack the code, the flag's waiting for you.
+                                    </p>
+                                    <button class="download-button" onclick="downloadImage('repo/ninja/shadows.jpg', 'shadows.jpg')">Download</button>
+                                    <script>
+                                        function downloadImage(url, filename) {
+                                            const a = document.createElement('a');
+                                            a.href = url;
+                                            a.download = filename;
+                                            document.body.appendChild(a);
+                                            a.click();
+                                            document.body.removeChild(a);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>
                 
                         <!-- Team Card 3 -->
                         <div class="team-card card mb-3">
-                            <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
+                            <div class="card-header" data-toggle="collapse" data-target="#team3Details" aria-expanded="false" aria-controls="team3Details">
                                 <div class="d-flex justify-content-between">
-                                    <div class="team-name">3.Cool Wallpaper</div>
-                                    <div class="team-points">100</div>
+                                    <div class="team-name">3.The Silent Warrior</div>
+                                    <div class="team-points">500</div>
                                 </div>
                             </div>
                 
                             <!-- Hidden Team Details -->
-                            <div id="team2Details" class="collapse">
+                            <div id="team3Details" class="collapse">
                                 <div class="card-body">
-                                    <p><strong>Riddle:</strong> In a world of neon lights and futuristic flair,
-                                        A 4K image holds a secret beyond compare.
-                                        Amidst the digital skyline and vibrant hues,
-                                        Lies a hidden message waiting for you.
-                                        Explore the wallpaper, let your vision guide,
-                                        For the flag is revealed where it’s cleverly disguised.
-                                        Can you spot the hidden truth in this cyber realm?</p>
-                                        <button class="download-button" onclick="downloadImage('repo/cool_wall/cool.jpg', 'cool.jpg')">Download</button>
-                                        <script>
-                                            function downloadImage(url, filename) {
-                                                const a = document.createElement('a');
-                                                a.href = url;
-                                                a.download = filename;
-                                                document.body.appendChild(a);
-                                                a.click();
-                                                document.body.removeChild(a);
-                                            }
-                                        </script>
-                                    
-                                    
+                                    <p><strong>Riddle: </strong>In a world where guns are none,
+                                        Samurai conquer, their task begun.
+                                        With sharpened swords, their foes they beat,
+                                        Can you decode this binary feat?</p>
+                                    <p><a class="file-link" href="repo/samurai/CyberpunkShop.exe" target="_blank">Open File</a></p>
+
                                 </div>
                             </div>
                         </div>
-                
-                        
-                
-                        <!--4 team-->
 
-                            <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
-                                <div class="d-flex justify-content-between">
-                                    <div class="team-name">4.EmojiKey</div>
-                                    <div class="team-points">100</div>
-                                </div>
-                            </div>
-                
-                            <!-- Hidden Team Details -->
-                            <div id="team2Details" class="collapse">
-                                <div class="card-body">
-                                    <p><strong>Riddle:</strong> Cyber Samurai, your prize is locked within a puzzle of beasts. Seek the feline, serpent, and winged creatures to uncover the code of a lost world. A key once shifted, will guide you through the labyrinth of symbols. Beware the mirrored cipher that hides your fortune. What was twisted must be set straight, and then... the treasure will be yours!"
-                                    </p>
-                                        
-                                    <p><a class="file-link" href="repo/emojikey/EmojiKey.txt" target="_blank">Open File</a></p>
-                                    
-                                </div>
-                            </div>
-
-
-
-                             <!-- Team Card 5 -->
+                        <!-- Team Card 3 -->
                         <div class="team-card card mb-3">
-                            <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
+                            <div class="card-header" data-toggle="collapse" data-target="#team3Details" aria-expanded="false" aria-controls="team3Details">
                                 <div class="d-flex justify-content-between">
-                                    <div class="team-name">5.Netrunners Assemble</div>
-                                    <div class="team-points">200</div>
+                                    <div class="team-name">4.The Monarch</div>
+                                    <div class="team-points">500</div>
                                 </div>
                             </div>
                 
                             <!-- Hidden Team Details -->
-                            <div id="team2Details" class="collapse">
+                            <div id="team3Details" class="collapse">
                                 <div class="card-body">
-                                    <p><strong>Riddle:</strong>I hold the key to a hidden phrase,
-                                        In pieces I lie, for you to raise.
-                                        Bits and bytes are my disguise,
-                                        Can you decode where the secret lies?</p>
-                                    <p><a class="file-link" href="repo/netrunners_assemble/netrunners" target="_blank">Open File</a></p>
+                                    <p><strong>Riddle: </strong>
+                                    The Monarch is the true ruler of his empire,
+                                    He sees no one and no one sees him.
+                                    His is present at all times but is not there at the same.
+                                    He is easy to find but not possible to meet.
+                                    </p>
+                                    <p><strong>Desc: </strong> 
+                                    Find Monarch's IRL 'About' to capture this flag.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
-                            <!-- Team Card 6 -->
-                            <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">6.Johnny Silverhand 1</div>
-                                        <div class="team-points">300</div>
-                                    </div>
-                                </div>
-                    
-                                <!-- Hidden Team Details -->
-                                <div id="team2Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle:</strong>Johnny's hand holds more than you know,
-                                            In this app, data starts to overflow.
-                                            Break the limits, push past the plan,
-                                            Can you outsmart Silverhand?</p>
-                                        <p><a class="file-link" href="repo/johnny-silver/johnny-silverhand.apk" target="_blank">Open File</a></p>
-
-    
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Team Card 7 -->
-                            <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">7.Johnny Silverhand 2</div>
-                                        <div class="team-points">200</div>
-                                    </div>
-                                </div>
-                    
-                                <!-- Hidden Team Details -->
-                                <div id="team2Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle:</strong>Johnny's past is more than it seems, Look closer at what you can see. Control the flow, and it might bend.</p>
-                                        <p><a class="file-link" href="repo/johnny-silver/johnny-silverhand.apk" target="_blank">Open File</a></p>
-
-    
-                                    </div>
-                                </div>
-                            </div>
-                      
-
-                               <!-- Team Card 8 -->
-                               <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">8.Socrates</div>
-                                        <div class="team-points">250</div>
-                                    </div>
-                                </div>
-                    
-                                <!--Hidden Team Details-->
-                                <div id="team2Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle: </strong>Socrates challenged the bounds of mind,
-                                            In hidden realms, answers you’ll find.
-                                            Speak where you’re not meant to be,
-                                            Can you reshape what’s there to see?</p>
-                                            <p><a class="file-link" href="https://lijarex440.pythonanywhere.com/" target="_blank">Access the challenge</a></p>
-    
-                                    </div>
-                                </div>
-
-                                </div>
-
-                                <!-- Team Card 9 -->
-                               <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team2Details" aria-expanded="false" aria-controls="team2Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">9.The forgotten Response</div>
-                                        <div class="team-points">200</div>
-                                    </div>
-                                </div>
-                    
-                                <!--Hidden Team Details-->
-                                <div id="team2Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle: </strong>Among the myriad of numerical responses,
-                                            One stands out as a beacon of success.
-                                            Barred but not lost, seek the code—
-                                            Unlock the path where secrets unfold.</p>
-                                            <p><a class="file-link" href="https://monarchofsuffering.pythonanywhere.com/" target="_blank">Access the challenge</a></p>
-    
-                                    </div>
-                                </div>
-                                </div>
-
-                                
-                                
-
-
-                                
-
-                                 <!-- Team Card 10 -->
-                               <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team1Details" aria-expanded="false" aria-controls="team1Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">10.Ninja</div>
-                                        <div class="team-points">200</div>
-                                    </div>
-                                </div>
-                    
-                                 <!--Hidden Team Details-->
-                                <div id="team1Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle: </strong>In the quiet dark, where shadows play,
-                                            The ninjas leave their mark, but not in the day.
-                                            Search through the layers, pixel by pixel,
-                                            Find where they hide, it won't be simple.
-                                            A cipher may help, a tool or two,
-                                            Crack the code, the flag's waiting for you</p>
-                                            <button class="download-button" onclick="downloadImage('repo/ninja/ninj4.jpg', 'ninja.jpg')">Download</button>
-                                        <script>
-                                            function downloadImage(url, filename) {
-                                                const a = document.createElement('a');
-                                                a.href = url;
-                                                a.download = filename;
-                                                document.body.appendChild(a);
-                                                a.click();
-                                                document.body.removeChild(a);
-                                            }
-                                        </script>
-                                    </div>
-                                </div>
-
-                                </div>
-
-
-                                 <!-- Team Card 11 -->
-                               <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team1Details" aria-expanded="false" aria-controls="team1Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">11.Samurai</div>
-                                        <div class="team-points">250</div>
-                                    </div>
-                                </div>
-                    
-                                 <!--Hidden Team Details-->
-                                <div id="team1Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle: </strong>In a world where guns are none,
-                                            Samurai conquer, their task begun.
-                                            With sharpened swords, their foes they beat,
-                                            Can you decode this binary feat?</p>
-                                            <p><a class="file-link" href="repo/samurai/Samurai.exe" target="_blank">Open File</a></p>
-    
-                                    </div>
-                                </div>
-
-                                </div>
-
-
-                                 <!-- Team Card 12 -->
-                               <div class="team-card card mb-3">
-                                <div class="card-header" data-toggle="collapse" data-target="#team1Details" aria-expanded="false" aria-controls="team1Details">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="team-name">12.Unfamilier Face</div>
-                                        <div class="team-points">200</div>
-                                    </div>
-                                </div>
-                    
-                                 <!--Hidden Team Details-->
-                                <div id="team1Details" class="collapse">
-                                    <div class="card-body">
-                                        <p><strong>Riddle: </strong>I am the key to the treasure you seek,
-                                            But my name is hidden and not what you think.
-                                            In a world of bytes and compressed delight,
-                                            Find me where passwords may lie in plain sight.
-                                            
-                                            I’m a password used so often and true,
-                                            In a list of secrets, I am one of a few.
-                                            Search for me in the cracked and the known,
-                                            Unlock the treasure that is now your own.
-                                            
-                                            What am I?
-                                            
-                                            c92b51b2f4d93d4e1081670bd9273402</p>
-                                            <p><a class="file-link" href="repo/dat" target="_blank">Open File</a></p>
-    
-                                    </div>
-                                </div>
-
-                                </div>
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-                            </div>
-
-
-                        </div>
-                        </div>
-                        <!-- Add more team cards similarly with unique IDs -->
                     </div>
                 </div>
-                
-                
-
             </div>
         </div>
     </div>
